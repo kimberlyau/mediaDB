@@ -1,0 +1,63 @@
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+h1, h2, h3, p {
+    font-family: 'Roboto';
+}
+
+h2 {
+    color: #3046C5;
+}
+
+header h2 {
+    color: #C4C4C4;
+}
+
+footer {
+    background-image: linear-gradient(#C4C4C4, white);
+    padding: 20px 0;
+}
+
+.jumbotron {
+    margin: 0;
+    padding: 30px;
+    background-image: linear-gradient(to right, #012e67, #032e42, #0a1417);
+    color: white;
+}
+
+.row-content {
+    padding: 50px 0;
+    border-bottom: 1px ridge;
+    min-height: 200px;
+}
+
+.navbar {
+    background-color: #032e42;
+}
+
+.site-footer{
+    background-image: linear-gradient(#CEC8FF, white);
+    padding: 20px 0;
+}
+
+.btn-circle.btn-xl {
+    width: 70px;
+    height: 70px;
+    padding: 16px 16px;
+    border-radius: 35px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.flex-column {
+    align-items: center;
+}
+
+#sidebar {
+    background-color: #2b6684;
+}
+
+#main {
+    background-color: #9dc0fa;
+}

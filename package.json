@@ -1,0 +1,30 @@
+{
+  "name": "mediadb",
+  "version": "1.0.0",
+  "description": "Personalized media backlog tracker",
+  "main": "index.js",
+  "scripts": {
+    "lite": "lite-server",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run lite"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kimberlyau/mediaDB.git"
+  },
+  "author": "Kimberly Au",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kimberlyau/mediaDB/issues"
+  },
+  "homepage": "https://github.com/kimberlyau/mediaDB#readme",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  },
+  "dependencies": {
+    "bootstrap": "^4.5.2",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1"
+  }
+}
