@@ -20,20 +20,12 @@
 
 <body>
 
-    <header class="jumbotron jumbotron-fluid">
-        <div class="dropdown d-sm-none">
-            <button class="btn fa fa-bars" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                <a class="nav-link" href="games.html"><i class="fa fa-gamepad"></i>  Gaming</a>
-                <a class="nav-link" href="books.html"><i class="fa fa-book"></i>  Books</a>
-                <a class="nav-link"  data-toggle="modal" data-target="#inputModal"><i class="fa fa-plus-circle"></i>  Add More</a>
-            </div>
-        </div>
-        <div class="container text-center">
+    <header class="jumbotron jumbotron-fluid text-center">
+        <div class="container">
             <div class="row">
                 <div class="col">
                     <h1>mediaDB</h1>
-                    <h4><em>Track all your media in one place</em></h5>
+                    <h3>Track all your media in one place</h3>
                 </div>
             </div>
         </div>
@@ -43,40 +35,18 @@
         <div class="row">
             <!--Sidebar-->
             <div class="col-2" id="sidebar">
-                <ul class="nav flex-column d-none d-sm-flex" id="icon-group">
-                    <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-tv fa-md nav-active"> </i></a></li>
-                    <li class="nav-item"><a class="nav-link" href="games.html"><i class="fa fa-gamepad fa-md"> </i></a></li>
-                    <li class="nav-item"><a class="nav-link" href="books.html"><i class="fa fa-book fa-md"> </i></a></li>
-                    <li class="nav-item"><a class="nav-link"  data-toggle="modal" data-target="#inputModal"><i class="fa fa-plus-circle fa-md"> </i></a></li>
+                <ul class="nav flex-column" id="icon-group">
+                    <li class="nav-item"><a class="nav-link" href="index.html"><i class="fa fa-tv fa-md"> </i></a></li>
+                    <li class="nav-item"><a class="nav-link nav-active" href="#"><i class="fa fa-gamepad fa-md nav-active"> </i></a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html"><i class="fa fa-book fa-md"> </i></a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html"><i class="fa fa-plus-circle fa-md"> </i></a></li>
                 </ul>
-
-                <!-- Modal -->
-                <div class="modal fade" id="inputModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                        </div>
-                        <div class="modal-body">
-                        ...
-                        </div>
-                        <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
-                        </div>
-                    </div>
-                    </div>
-                </div>
             </div>
-
             <!--Main section-->
-            <div class="col-12 col-sm-10 text-white" id="rightSection">
+            <div class="col-10 text-white" id="rightSection">
                 <nav>
                     <!--Tabs-->
-                    <ul class="nav nav-tabs nav-fill mx-4 mx-sm-0" id="tabbar" role="tablist">
+                    <ul class="nav nav-tabs nav-fill" id="tabbar" role="tablist">
                         <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#tab-all">All</a></li>
                         <li class="nav-item"><a class="nav-link"  data-toggle="tab" href="#tab-inprogress">In Progress</a></li>
                         <li class="nav-item"><a class="nav-link"  data-toggle="tab" href="#tab-done">Done</a></li>
@@ -87,7 +57,6 @@
                     <div class="tab-content" id="myTabContent">
                         <!--Tab 1: All-->
                         <div class="tab-pane fade show active" id="tab-all">
-                            
                                 <img src="img/tv/9-1-1.jpg" class="tv-show">
                                 <img src="img/tv/Masterchef.jpg" class="tv-show">
                                 <img src="img/tv/MaskedSinger.jpg" class="tv-show">

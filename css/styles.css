@@ -18,7 +18,7 @@ header h2 {
     margin: 0;
     padding: 30px;
     /* background-image: linear-gradient(to right, #012e67, #032e42, #0a1417); */
-    background-image: linear-gradient(to right, black, #121212, #1F1B24);
+    background-image: linear-gradient(to right, #121212, #19171B, #1F1B24);
     color: white;
 }
 
@@ -36,7 +36,6 @@ header h2 {
 #sidebar {
     background-color: #121212;
 }
-
 .btn-circle.btn-xl {
     width: 70px;
     height: 70px;
@@ -46,10 +45,29 @@ header h2 {
     text-align: center;
 }
 
-.fa {
+#icon-group {
+    padding-top: 12vh;
+}
+
+.fa-bars {
+    color: #a2adc3;
+    font-size: 35px;
+}
+
+.fa-md {
     font-size: 70px;
     color: #a2adc3;
+    padding-top: 1vh;
 }
+
+.fa:hover {
+    color:#3046C5;
+}
+
+.nav-active, .nav-link {
+    color:#4b83f5; 
+}
+
 
 .flex-column {
     align-items: center;
@@ -57,8 +75,19 @@ header h2 {
 
 #rightSection {
     background-color: #1F1B24;
+    height: 80vh; 
+    overflow-y: scroll;
 }
 
 .active-item {
     background-color: #a2adc3;
+}
+
+.tv-show {
+    height: 250px;
+    padding: 2.5%;
+}
+
+.tab-pane {
+    text-align: center;
 }
