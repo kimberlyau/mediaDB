@@ -25,59 +25,83 @@
             <div class="row">
                 <div class="col">
                     <h1>mediaDB</h1>
-                    <h2>Track all your media in one place</h2>
+                    <h3>Track all your media in one place</h3>
                 </div>
             </div>
         </div>
     </header>
 
-    <div class="container-fluid">
+    <div class="container-fluid" id="mainContainer">
         <div class="row">
-            <div class="col-2 px-1 sticky-top" id="sidebar">
-                <div class="nav flex-column vh-100">
-                    <button type="button" class="btn btn-primary btn-circle btn-xl my-3"></button>
-                    <button type="button" class="btn btn-primary btn-circle btn-xl my-3"></button>
-                    <button type="button" class="btn btn-primary btn-circle btn-xl my-3"></button>
-                    <button type="button" class="btn btn-primary btn-circle btn-xl my-3"></button>
-                </div>
+            <!--Sidebar-->
+            <div class="col-2 px-1" id="sidebar">
+                <ul class="nav flex-column vh-100 ">
+                    <li class="nav-item"><a class="nav-link" href="index.html"><i class="fa fa-tv fa-xl"> </i></a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html"><i class="fa fa-gamepad fa-xl"> </i></a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html"><i class="fa fa-book fa-xl"> </i></a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html"><i class="fa fa-plus-circle fa-xl"> </i></a></li>
+                </ul>
             </div>
-            <div class="col text-white" id="main">
+            <!--Main section-->
+            <div class="col text-white" id="rightSection">
                 <div class="container">
                     <div class="row">
                         <div class="col">
                             <nav>
-                                <ul class="nav nav-pills nav-fill" id="tabbar">
+                                <!--Tabs-->
+                                <ul class="nav nav-tabs nav-fill" id="tabbar" role="tablist">
                                     <li class="nav-item">
-                                        <a class="nav-link active" href="#">Active</a>
+                                        <a class="nav-link active" data-toggle="tab" href="#tab-all">All</a>
                                     </li>
+                                
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Link</a>
+                                        <a class="nav-link"  data-toggle="tab" href="#tab-inprogress">In Progress</a>
                                     </li>
+
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Link</a>
+                                        <a class="nav-link"  data-toggle="tab" href="#tab-done">Done</a>
                                     </li>
+
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Link</a>
+                                        <a class="nav-link"  data-toggle="tab" href="#tab-backlog">Backlog</a>
                                     </li>
                                 </ul>
+                                
+                                <!--Tab contents-->
+                                <div class="tab-content" id="myTabContent">
+                                    <!--Tab 1: All-->
+                                    <div class="tab-pane fade show active" id="tab-all">
+                                        <h1>All</h1>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget pharetra ante. Integer pulvinar felis at turpis sagittis accumsan. Integer non felis libero. Nam consequat placerat finibus. Pellentesque commodo lectus felis, eu fringilla quam vehicula in. Cras commodo ante ac maximus pulvinar. Etiam sed metus et nisi convallis facilisis et non magna. Suspendisse auctor leo felis, in malesuada nibh aliquam at.
+            
+                                            Ut porttitor felis eu nisl congue, in tincidunt urna euismod. Proin efficitur libero vitae ipsum ullamcorper, et blandit eros eleifend. Donec gravida euismod dolor, quis tincidunt nibh ullamcorper in. Ut non eleifend arcu. Pellentesque suscipit fringilla justo, in pellentesque dui cursus eget. Suspendisse euismod vestibulum mi ut volutpat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce ut elit leo. Fusce sollicitudin tellus justo, nec posuere nunc venenatis eu.
+            
+                                            Pellentesque nibh dui, iaculis ac imperdiet tempor, pharetra ac risus. Suspendisse a laoreet quam. Nullam rhoncus egestas congue. Suspendisse potenti. Suspendisse potenti. Cras lobortis turpis et rutrum pellentesque. Sed mattis sagittis pulvinar. Sed varius sollicitudin lacus sit amet varius. In a velit vestibulum, euismod diam quis, scelerisque nunc. Vivamus lobortis, nunc non ornare ultricies, sapien risus sagittis mi, sed vestibulum augue lectus rhoncus dolor.
+            
+                                            Aenean iaculis eros accumsan sem fringilla lacinia. Nulla dui ex, scelerisque in iaculis vitae, pharetra efficitur metus. Praesent fermentum rhoncus tellus, a sagittis velit aliquam vel. Vestibulum fermentum sodales justo quis tincidunt. Maecenas lobortis, eros et malesuada tempor, neque sapien rutrum ipsum, in porta orci ipsum at turpis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vulputate fermentum nisi, et tincidunt quam tincidunt eu. Praesent porta risus ut nibh tempor convallis. Phasellus lobortis, urna eget luctus fringilla, augue justo dictum magna, et maximus orci lacus nec urna. Donec aliquam magna lorem, et venenatis metus iaculis efficitur. Duis suscipit eros et arcu congue, quis venenatis libero viverra. Duis placerat urna quis ex luctus, id porta sapien ornare. Aenean ac iaculis velit, vel auctor tellus. Donec sodales vehicula tincidunt. Etiam egestas nulla id vehicula efficitur. Praesent pulvinar felis vitae risus aliquet commodo.
+            
+                                            Curabitur mattis tellus non commodo ultricies. Aliquam ut sem vel diam aliquam euismod ut vitae est. Mauris hendrerit pretium enim ut pretium. Maecenas lacinia nibh nec blandit vulputate. Fusce congue urna pharetra erat luctus efficitur. Praesent consectetur tincidunt lacus, in pretium augue condimentum id. Duis nec lectus scelerisque, accumsan dui eu, egestas enim.
+                                        </p>
+                                    </div>
+                                    <!--Tab 2: In Progress-->
+                                    <div class="tab-pane fade" id="tab-inprogress">
+                                        <h1>In Progress</h1>
+                                    </div>
+
+                                    <!--Tab 3: Done-->
+                                    <div class="tab-pane fade" id="tab-done">
+                                        <h1>Done</h1>
+                                    </div>
+
+                                    <!--Tab 4: Backlog-->
+                                    <div class="tab-pane fade" id="tab-backlog">
+                                        <h1>Backlog</h1>
+                                    </div>
+                                
+                                </div>
                             </nav>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget pharetra ante. Integer pulvinar felis at turpis sagittis accumsan. Integer non felis libero. Nam consequat placerat finibus. Pellentesque commodo lectus felis, eu fringilla quam vehicula in. Cras commodo ante ac maximus pulvinar. Etiam sed metus et nisi convallis facilisis et non magna. Suspendisse auctor leo felis, in malesuada nibh aliquam at.
-
-                                Ut porttitor felis eu nisl congue, in tincidunt urna euismod. Proin efficitur libero vitae ipsum ullamcorper, et blandit eros eleifend. Donec gravida euismod dolor, quis tincidunt nibh ullamcorper in. Ut non eleifend arcu. Pellentesque suscipit fringilla justo, in pellentesque dui cursus eget. Suspendisse euismod vestibulum mi ut volutpat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce ut elit leo. Fusce sollicitudin tellus justo, nec posuere nunc venenatis eu.
-
-                                Pellentesque nibh dui, iaculis ac imperdiet tempor, pharetra ac risus. Suspendisse a laoreet quam. Nullam rhoncus egestas congue. Suspendisse potenti. Suspendisse potenti. Cras lobortis turpis et rutrum pellentesque. Sed mattis sagittis pulvinar. Sed varius sollicitudin lacus sit amet varius. In a velit vestibulum, euismod diam quis, scelerisque nunc. Vivamus lobortis, nunc non ornare ultricies, sapien risus sagittis mi, sed vestibulum augue lectus rhoncus dolor.
-
-                                Aenean iaculis eros accumsan sem fringilla lacinia. Nulla dui ex, scelerisque in iaculis vitae, pharetra efficitur metus. Praesent fermentum rhoncus tellus, a sagittis velit aliquam vel. Vestibulum fermentum sodales justo quis tincidunt. Maecenas lobortis, eros et malesuada tempor, neque sapien rutrum ipsum, in porta orci ipsum at turpis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vulputate fermentum nisi, et tincidunt quam tincidunt eu. Praesent porta risus ut nibh tempor convallis. Phasellus lobortis, urna eget luctus fringilla, augue justo dictum magna, et maximus orci lacus nec urna. Donec aliquam magna lorem, et venenatis metus iaculis efficitur. Duis suscipit eros et arcu congue, quis venenatis libero viverra. Duis placerat urna quis ex luctus, id porta sapien ornare. Aenean ac iaculis velit, vel auctor tellus. Donec sodales vehicula tincidunt. Etiam egestas nulla id vehicula efficitur. Praesent pulvinar felis vitae risus aliquet commodo.
-
-                                Curabitur mattis tellus non commodo ultricies. Aliquam ut sem vel diam aliquam euismod ut vitae est. Mauris hendrerit pretium enim ut pretium. Maecenas lacinia nibh nec blandit vulputate. Fusce congue urna pharetra erat luctus efficitur. Praesent consectetur tincidunt lacus, in pretium augue condimentum id. Duis nec lectus scelerisque, accumsan dui eu, egestas enim.
-                            </p>
-                        </div>
-                        
                     </div>
                 </div>
             </div>

@@ -14,15 +14,11 @@ header h2 {
     color: #C4C4C4;
 }
 
-footer {
-    background-image: linear-gradient(#C4C4C4, white);
-    padding: 20px 0;
-}
-
 .jumbotron {
     margin: 0;
     padding: 30px;
-    background-image: linear-gradient(to right, #012e67, #032e42, #0a1417);
+    /* background-image: linear-gradient(to right, #012e67, #032e42, #0a1417); */
+    background-image: linear-gradient(to right, black, #121212, #1F1B24);
     color: white;
 }
 
@@ -32,13 +28,13 @@ footer {
     min-height: 200px;
 }
 
-.navbar {
-    background-color: #032e42;
+#mainContainer {
+    height: 80vh;
+    overflow: auto;
 }
 
-.site-footer{
-    background-image: linear-gradient(#CEC8FF, white);
-    padding: 20px 0;
+#sidebar {
+    background-color: #121212;
 }
 
 .btn-circle.btn-xl {
@@ -50,14 +46,19 @@ footer {
     text-align: center;
 }
 
+.fa {
+    font-size: 70px;
+    color: #a2adc3;
+}
+
 .flex-column {
     align-items: center;
 }
 
-#sidebar {
-    background-color: #2b6684;
+#rightSection {
+    background-color: #1F1B24;
 }
 
-#main {
-    background-color: #9dc0fa;
+.active-item {
+    background-color: #a2adc3;
 }
