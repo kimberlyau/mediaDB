@@ -18,7 +18,7 @@ header h2 {
     margin: 0;
     padding: 30px;
     /* background-image: linear-gradient(to right, #012e67, #032e42, #0a1417); */
-    background-image: linear-gradient(to right, #121212, #19171B, #1F1B24);
+    background-image: linear-gradient(to right, #121212, #020a35, #3e455f);
     color: white;
 }
 
@@ -83,11 +83,26 @@ header h2 {
     background-color: #a2adc3;
 }
 
-.tv-show {
+.tv-show, .book {
     height: 250px;
+    width: 185px;
     padding: 2.5%;
 }
 
+.nes {
+    height: 250px;
+    padding: 2%;
+}
+
+.snes {
+    height: 200px;
+    padding: 2%;
+}
+
+.games:hover, .tv-show:hover, .book:hover {
+    /* background-color: rgba(251, 251, 251, 0.2) */
+    opacity: 0.5;
+}
 .tab-pane {
     text-align: center;
 }
