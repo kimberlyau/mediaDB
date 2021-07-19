@@ -44,7 +44,8 @@
             <!--Sidebar-->
             <div class="col-2" id="sidebar">
                 <ul class="nav flex-column d-none d-sm-flex" id="icon-group">
-                    <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-tv fa-md nav-active"> </i></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-home fa-md nav-active"> </i></a></li>
+                    <li class="nav-item"><a class="nav-link" href="tv.html"><i class="fa fa-tv fa-md"> </i></a></li>
                     <li class="nav-item"><a class="nav-link" href="games.html"><i class="fa fa-gamepad fa-md"> </i></a></li>
                     <li class="nav-item"><a class="nav-link" href="books.html"><i class="fa fa-book fa-md"> </i></a></li>
                     <li class="nav-item"><a class="nav-link"  data-toggle="modal" data-target="#inputModal"><i class="fa fa-plus-circle fa-md"> </i></a></li>
@@ -74,43 +75,45 @@
 
             <!--Main section-->
             <div class="col-12 col-sm-10 text-white" id="rightSection">
-                <nav>
-                    <!--Tabs-->
-                    <ul class="nav nav-tabs nav-fill mx-4 mx-sm-0" id="tabbar" role="tablist">
-                        <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#tab-all">All</a></li>
-                        <li class="nav-item"><a class="nav-link"  data-toggle="tab" href="#tab-inprogress">In Progress</a></li>
-                        <li class="nav-item"><a class="nav-link"  data-toggle="tab" href="#tab-done">Done</a></li>
-                        <li class="nav-item"><a class="nav-link"  data-toggle="tab" href="#tab-backlog">Backlog</a></li>
-                    </ul>
-                    
-                    <!--Tab contents-->
-                    <div class="tab-content" id="myTabContent">
-                        <!--Tab 1: All-->
-                        <div class="tab-pane fade show active" id="tab-all">
-                            
-                                <img src="img/tv/9-1-1.jpg" class="tv-show">
-                                <img src="img/tv/Avatar.png" class="tv-show">  
-                                <img src="img/tv/Masterchef.jpg" class="tv-show">
-                                <img src="img/tv/MaskedSinger.jpg" class="tv-show">
-                                <img src="img/tv/OnePunch.jpg" class="tv-show">                                                 
+                <h1 class="text-center mt-3 d-none d-sm-block">Welcome to mediaDB!</h1>
+                <h4 class="text-center mt-3 mb-3"><em>mediaDB serves as an all-in-one media tracking application<em></h4>
+                <!--Carousel-->
+                <div id="media-carousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active container-fluid">
+                            <div class="row">
+                                <div class="col-12 col-sm-6">
+                                    <img class="d-block carousel-img" src="img/tv/Avatar.png" alt="First slide">
+                                </div>
+                                <div class="col-sm-6">
+                                    <img class="d-none d-sm-block carousel-img" src="img/books/Atwood_HandmaidsTale.jpg" alt="Third slide">
+                                </div>
+                            </div>
                         </div>
-                        <!--Tab 2: In Progress-->
-                        <div class="tab-pane fade" id="tab-inprogress">
-                            <h1>In Progress</h1>
+                        <div class="carousel-item container-fluid">
+                            <div class="row">
+                                <div class="col-12 col-sm-6">
+                                    <img class="d-block carousel-img" src="img/tv/9-1-1.jpg" alt="First slide">
+                                </div>
+                                <div class="col-sm-6">
+                                    <img class="d-none d-sm-block carousel-img" src="img/books/Golden_MemoirsOfAGeisha.jpeg" alt="Third slide">
+                                </div>
+                            </div>
                         </div>
-
-                        <!--Tab 3: Done-->
-                        <div class="tab-pane fade" id="tab-done">
-                            <h1>Done</h1>
+                        <div class="carousel-item container-fluid">
+                            <div class="row">
+                                <div class="col-12 col-sm-6">
+                                    <img class="d-block carousel-img" src="img/tv/MaskedSinger.jpg" alt="First slide">
+                                </div>
+                                <div class="col-sm-6">
+                                    <img class="d-none d-sm-block carousel-img" src="img/books/Christie_AndThenThereWereNone.jpeg" alt="Third slide">
+                                </div>
+                            </div>
                         </div>
-
-                        <!--Tab 4: Backlog-->
-                        <div class="tab-pane fade" id="tab-backlog">
-                            <h1>Backlog</h1>
-                        </div>
-                    
                     </div>
-                </nav>
+                </div> <!--Carousel end-->
+                <p class="text-center mt-1 mt-sm-4">View your collection of tv, games, and books by navigating to the left sidebar or, add new media now: </p>
+                <a class="nav-link text-center" data-toggle="modal" data-target="#inputModal"><i class="fa fa-plus-circle" id="homeInputModal"> </i></a>
             </div> <!--Main section end-->
         </div>
     </div> <!--Container end-->

@@ -25,9 +25,10 @@
         <div class="dropdown d-sm-none">
             <button class="btn fa fa-bars" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
             <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                <a class="nav-link" href="index.html"><i class="fa fa-home"></i>  Home</a>
-                <a class="nav-link" href="tv.html"><i class="fa fa-tv"></i>  TV Shows</a>
+                <a class="nav-link" href="index.html"><i class="fa fa-gamepad"></i>  Home</a>
+                <a class="nav-link" href="#"><i class="fa fa-gamepad"></i>  TV</a>
                 <a class="nav-link" href="games.html"><i class="fa fa-gamepad"></i>  Gaming</a>
+                <a class="nav-link" href="books.html"><i class="fa fa-book"></i>  Books</a>
                 <a class="nav-link"  data-toggle="modal" data-target="#inputModal"><i class="fa fa-plus-circle"></i>  Add More</a>
             </div>
         </div>
@@ -46,10 +47,10 @@
             <div class="col-2" id="sidebar">
                 <ul class="nav flex-column d-none d-sm-flex" id="icon-group">
                     <li class="nav-item"><a class="nav-link" href="index.html"><i class="fa fa-home fa-md"> </i></a></li>
-                    <li class="nav-item"><a class="nav-link" href="tv.html"><i class="fa fa-tv fa-md"> </i></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-tv fa-md nav-active"> </i></a></li>
                     <li class="nav-item"><a class="nav-link" href="games.html"><i class="fa fa-gamepad fa-md"> </i></a></li>
-                    <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-book fa-md nav-active"> </i></a></li>
-                    <li class="nav-item"><a class="nav-link" data-toggle="modal" data-target="#inputModal"><i class="fa fa-plus-circle fa-md"> </i></a></li>
+                    <li class="nav-item"><a class="nav-link" href="books.html"><i class="fa fa-book fa-md"> </i></a></li>
+                    <li class="nav-item"><a class="nav-link"  data-toggle="modal" data-target="#inputModal"><i class="fa fa-plus-circle fa-md"> </i></a></li>
                 </ul>
 
                 <!-- Modal -->
@@ -90,14 +91,11 @@
                         <!--Tab 1: All-->
                         <div class="tab-pane fade show active" id="tab-all">
                             
-                                <img src="img/books/Atwood_HandmaidsTale.jpg" class="book">
-                                <img src="img/books/Atwood_Testaments.jpeg" class="book">
-                                <img src="img/books/Christie_AndThenThereWereNone.jpeg" class="book">
-                                <img src="img/books/Ford_HotelOntheCorner.jpeg" class="book">  
-                                <img src="img/books/Golden_MemoirsOfAGeisha.jpeg" class="book">
-                                <img src="img/books/Revoyr_Southland.jpeg" class="book">
-                                <img src="img/books/Rowling_HarryPotter.jpg" class="book">  
-                                
+                                <img src="img/tv/9-1-1.jpg" class="tv-show">
+                                <img src="img/tv/Avatar.png" class="tv-show">  
+                                <img src="img/tv/Masterchef.jpg" class="tv-show">
+                                <img src="img/tv/MaskedSinger.jpg" class="tv-show">
+                                <img src="img/tv/OnePunch.jpg" class="tv-show">                                                 
                         </div>
                         <!--Tab 2: In Progress-->
                         <div class="tab-pane fade" id="tab-inprogress">
@@ -116,11 +114,9 @@
                     
                     </div>
                 </nav>
-            </div>
+            </div> <!--Main section end-->
         </div>
     </div> <!--Container end-->
-
-    </footer>
 
     <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>

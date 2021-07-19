@@ -46,12 +46,17 @@ header h2 {
 }
 
 #icon-group {
-    padding-top: 12vh;
+    padding-top: 8vh;
 }
 
 .fa-bars {
     color: #a2adc3;
     font-size: 35px;
+}
+
+#homeInputModal {
+    color: #a2adc3;
+    font-size: 40px;
 }
 
 .fa-md {
@@ -60,14 +65,13 @@ header h2 {
     padding-top: 1vh;
 }
 
-.fa:hover {
+.fa:hover, #homeInputModal {
     color:#3046C5;
 }
 
 .nav-active, .nav-link {
     color:#4b83f5; 
 }
-
 
 .flex-column {
     align-items: center;
@@ -90,7 +94,7 @@ header h2 {
 }
 
 .nes {
-    height: 250px;
+    height: 200px;
     padding: 2%;
 }
 
@@ -106,3 +110,14 @@ header h2 {
 .tab-pane {
     text-align: center;
 }
+
+.carousel-img {
+    margin: auto;
+    height: 300px;
+}
+
+.slide {
+    margin: auto;
+}
+
+
