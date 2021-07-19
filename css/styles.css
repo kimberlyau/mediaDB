@@ -45,6 +45,11 @@ header h2 {
     overflow-y: scroll;
 }
 
+.carousel-img {
+    margin: auto;
+    height: 225px;
+}
+
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) { 
     #mainContainer {
@@ -54,6 +59,10 @@ header h2 {
 
     #rightSection {
         height: 78vh; 
+    }
+
+    .carousel-img {
+        height: 275px;
     }
 }
 
@@ -138,11 +147,6 @@ header h2 {
 }
 .tab-pane {
     text-align: center;
-}
-
-.carousel-img {
-    margin: auto;
-    height: 275px;
 }
 
 .slide {
