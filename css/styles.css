@@ -2,7 +2,7 @@ body {
     font-family: "Open Sans", sans-serif;
 }
 
-h1, h2, h3, p {
+h1, h2, h3, p, label {
     font-family: 'Roboto';
 }
 
@@ -28,10 +28,32 @@ header h2 {
     min-height: 200px;
 }
 
+/* Device size specific settings */
+
+/* XS device settings */
 #mainContainer {
-    height: 80vh;
+    height: 72vh;
     overflow: auto;
+}  
+
+#rightSection {
+    background-color: #1F1B24;
+    height: 72vh; 
+    overflow-y: scroll;
 }
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+    #mainContainer {
+        height: 78vh;
+        overflow: auto;
+    }    
+
+    #rightSection {
+        height: 78vh; 
+    }
+}
+
 
 #sidebar {
     background-color: #121212;
@@ -59,13 +81,23 @@ header h2 {
     font-size: 40px;
 }
 
+.modal-header{
+    background-color: #121212;
+    color: white;
+}
+
+.modal-body, .modal-footer  {
+    background-color: #1d1b1bee;
+    color: white;
+}
+
 .fa-md {
     font-size: 70px;
     color: #a2adc3;
     padding-top: 1vh;
 }
 
-.fa:hover, #homeInputModal {
+.fa:hover, #homeInputModal:hover {
     color:#3046C5;
 }
 
@@ -75,12 +107,6 @@ header h2 {
 
 .flex-column {
     align-items: center;
-}
-
-#rightSection {
-    background-color: #1F1B24;
-    height: 80vh; 
-    overflow-y: scroll;
 }
 
 .active-item {

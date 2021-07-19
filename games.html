@@ -25,8 +25,8 @@
         <div class="dropdown d-sm-none">
             <button class="btn fa fa-bars" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
             <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                <a class="nav-link" href="index.html"><i class="fa fa-tv"></i>  Home</a>
-                <a class="nav-link" href="tv.html"><i class="fa fa-tv"></i>  TV Show</a>
+                <a class="nav-link" href="index.html"><i class="fa fa-home"></i>  Home</a>
+                <a class="nav-link" href="tv.html"><i class="fa fa-tv"></i>  TV Shows</a>
                 <a class="nav-link" href="books.html"><i class="fa fa-book"></i>  Books</a>
                 <a class="nav-link"  data-toggle="modal" data-target="#inputModal"><i class="fa fa-plus-circle"></i>  Add More</a>
             </div>
@@ -57,13 +57,36 @@
                     <div class="modal-dialog modal-dialog-centered" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                        <h5 class="modal-title">Add Media</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                         </div>
                         <div class="modal-body">
-                        ...
+                            <form>
+                                <div class="form-group">
+                                    <label for="mediaTitle">Media title</label>
+                                    <input type="text" class="form-control" id="mediaTitle" placeholder="Enter name of media (i.e.: tv show, game, book title)">
+                                </div>
+                                <!--Radio media type options-->
+                                <label>Select media type</label>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="tvRadio" value="tvshow" checked>
+                                    <label class="form-check-label" for="tvRadio">TV Show</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="gameRadio" value="game">
+                                    <label class="form-check-label" for="gameRadio">Game</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="bookRadio" value="book">
+                                    <label class="form-check-label" for="bookRadio">Book</label>
+                                </div>
+                                <div class="form-group mt-2">
+                                    <label for="formFile">Attach an image file:</label>
+                                    <input type="file" class="form-control-file" id="formFile">
+                                </div>
+                            </form>
                         </div>
                         <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -89,7 +112,7 @@
                     <div class="tab-content" id="myTabContent">
                         <!--Tab 1: All-->
                         <div class="tab-pane fade show active" id="tab-all">
-                            <h3>Nintendo Entertainment System</h3>
+                            <h3 class="mt-2">Nintendo Entertainment System</h3>
                             <img src="img/games/kirbys-adventure.png" class="games nes">
                             <img src="img/games/metroid.png" class="games nes">  
                             <img src="img/games/super-mario-bros.png" class="games nes">
