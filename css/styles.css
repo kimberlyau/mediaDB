@@ -2,7 +2,7 @@ body {
     font-family: "Open Sans", sans-serif;
 }
 
-h1, h2, h3, p, label {
+h1, h2, h3, p {
     font-family: 'Roboto';
 }
 
@@ -68,7 +68,7 @@ header h2 {
 }
 
 #icon-group {
-    padding-top: 8vh;
+    padding-top: 5vh;
 }
 
 .fa-bars {
@@ -81,12 +81,12 @@ header h2 {
     font-size: 40px;
 }
 
-.modal-header{
+.modal-header, .modal-footer {
     background-color: #121212;
     color: white;
 }
 
-.modal-body, .modal-footer  {
+.modal-body {
     background-color: #1d1b1bee;
     color: white;
 }
