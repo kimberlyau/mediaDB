@@ -1,3 +1,6 @@
+html {
+    background-image: linear-gradient(to right, #121212, #020a35, #3e455f);
+}
 body {
     font-family: "Open Sans", sans-serif;
 }
@@ -32,13 +35,13 @@ header h2 {
 
 /* XS device settings */
 #mainContainer {
-    height: 72vh;
+    height: 70vh;
     overflow: auto;
 }  
 
 #rightSection {
     background-color: #1F1B24;
-    height: 72vh; 
+    height: 70vh; 
     overflow-y: scroll;
 }
 
@@ -139,7 +142,7 @@ header h2 {
 
 .carousel-img {
     margin: auto;
-    height: 300px;
+    height: 275px;
 }
 
 .slide {
