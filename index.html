@@ -42,65 +42,53 @@
 
     <div class="container-fluid" id="mainContainer">
         <div class="row">
-            <!--Sidebar-->
-            <div class="col-2" id="sidebar">
-                <ul class="nav flex-column d-none d-sm-flex" id="icon-group">
-                    <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-home fa-md nav-active"> </i></a></li>
-                    <li class="nav-item"><a class="nav-link" href="tv.html"><i class="fa fa-tv fa-md"> </i></a></li>
-                    <li class="nav-item"><a class="nav-link" href="games.html"><i class="fa fa-gamepad fa-md"> </i></a></li>
-                    <li class="nav-item"><a class="nav-link" href="books.html"><i class="fa fa-book fa-md"> </i></a></li>
-                    <li class="nav-item"><a class="nav-link"  data-toggle="modal" data-target="#inputModal"><i class="fa fa-plus-circle fa-md"> </i></a></li>
-                </ul>
-
-                <!-- Modal -->
-                <div class="modal fade" id="inputModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                        <h5 class="modal-title">Add Media</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                        </div>
-                        <div class="modal-body">
-                            <form>
-                                <div class="form-group">
-                                    <label for="mediaTitle">Media title</label>
-                                    <input type="text" class="form-control" id="mediaTitle" placeholder="Enter name of media (i.e.: tv show, game, book title)">
-                                </div>
-                                <!--Radio media type options-->
-                                <label>Select media type</label>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="tvRadio" checked>
-                                    <label class="form-check-label" for="tvRadio">TV Show</label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="gameRadio">
-                                    <label class="form-check-label" for="gameRadio">Game</label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="bookRadio">
-                                    <label class="form-check-label" for="bookRadio">Book</label>
-                                </div>
-                                <div class="form-group mt-2">
-                                    <label for="formFile">Attach an image file:</label>
-                                    <input type="file" class="form-control-file" id="formFile">
-                                </div>
-                            </form>
-                        </div>
-                        <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
-                        </div>
+            <!-- Modal -->
+            <div class="modal fade" id="inputModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title">Add Media</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                     </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="mediaTitle">Media title</label>
+                                <input type="text" class="form-control" id="mediaTitle" placeholder="Enter name of media (i.e.: tv show, game, book title)">
+                            </div>
+                            <!--Radio media type options-->
+                            <label>Select media type</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="tvRadio" checked>
+                                <label class="form-check-label" for="tvRadio">TV Show</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="gameRadio">
+                                <label class="form-check-label" for="gameRadio">Game</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="bookRadio">
+                                <label class="form-check-label" for="bookRadio">Book</label>
+                            </div>
+                            <div class="form-group mt-2">
+                                <label for="formFile">Attach an image file:</label>
+                                <input type="file" class="form-control-file" id="formFile">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
                     </div>
                 </div>
+                </div>
             </div>
-
             <!--Main section-->
-            <div class="col-12 col-sm-10 text-white" id="rightSection">
-                <h1 class="text-center mt-3 d-none d-sm-block">Welcome to mediaDB!</h1>
-                <h4 class="text-center mt-3 mb-3"><em>mediaDB serves as an all-in-one media tracking application<em></h4>
+            <div class="col text-white" id="rightSection">
+                <h1 class="text-center mt-3">Welcome to mediaDB!</h1>
+                <h4 class="text-center mt-3 mb-3 d-none d-sm-block"><em>mediaDB serves as an all-in-one media tracking application<em></h4>
                 <!--Carousel-->
                 <div id="media-carousel" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
@@ -136,10 +124,33 @@
                         </div>
                     </div>
                 </div> <!--Carousel end-->
-                <p class="text-center mt-1 mt-sm-4">Modify your collection of tv, games, and books by navigating to the left sidebar or, add new media now: </p>
-                <a class="nav-link text-center" data-toggle="modal" data-target="#inputModal"><i class="fa fa-plus-circle" id="homeInputModal"> </i></a>
+                <h5 class="text-center mt-3 mt-sm-4">
+                    Modify your collection of tv, games, and books by navigating to the 
+                    <a href="tv.html"><i class="fa fa-tv fa-sm ml-1"></i>  tv show,  </a>
+                    <a href="games.html"><i class="fa fa-gamepad fa-sm ml-1"></i>  gaming,  </a>
+                    or
+                    <a href="books.html"><i class="fa fa-book fa-sm ml-1"></i>  book  </a> sections.
+                </h5>
+                <h5 class="text-center">
+                    Or, add new media now:
+                    <a class="nav-link text-center" data-toggle="modal" data-target="#inputModal"><i class="fa fa-plus-circle" id="homeInputModal"> </i></a> 
+                </h5>
+
             </div> <!--Main section end-->
-        </div>
+            <!-- Sidebar
+            <div class="col-2" id="sidebar">
+                <ul class="nav flex-column d-none d-sm-flex" id="icon-group">
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-home fa-md nav-active"> </i></a></li>
+                    <li class="nav-item"><a class="nav-link" href="tv.html"><i class="fa fa-tv fa-md"> </i></a></li>
+                    <li class="nav-item"><a class="nav-link" href="games.html"><i class="fa fa-gamepad fa-md"> </i></a></li>
+                    <li class="nav-item"><a class="nav-link" href="books.html"><i class="fa fa-book fa-md"> </i></a></li>
+                    <li class="nav-item"><a class="nav-link"  data-toggle="modal" data-target="#inputModal"><i class="fa fa-plus-circle fa-md"> </i></a></li>
+                </ul> -->
+
+                
+            </div> <!--Col end-->
+
+        </div> <!--Row end-->
     </div> <!--Container end-->
 
     <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->

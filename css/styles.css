@@ -1,19 +1,13 @@
-html {
-    background-image: linear-gradient(to right, #121212, #020a35, #3e455f);
-}
 body {
     font-family: "Open Sans", sans-serif;
+    background-image: linear-gradient(to right, #121212, #020a35, #3e455f);
 }
 
-h1, h2, h3, p {
+h1, h2, h3, p, a, i {
     font-family: 'Roboto';
 }
 
-h2 {
-    color: #3046C5;
-}
-
-header h2 {
+header, h2 {
     color: #C4C4C4;
 }
 
