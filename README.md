@@ -9,14 +9,16 @@
 
 # Designed using Figma
 ## Screenshots
-### Large Viewport
+### X-Large Viewport
 ![LG-Viewport](img/screenshots/site-lg.png)
-### X-Small Viewport
-![XS-Viewport](img/screenshots/site-xs.png)
+### X-Large Viewport - Gaming Page
+![iPhone-Screenshot](img/screenshots/site-lg-gaming.png)
 ### iPhone
 ![iPhone-Screenshot](img/screenshots/site-iphone.png)
+### Pixel - Gaming Page
+![iPhone-Screenshot](img/screenshots/site-pixel-gaming.png)
 ## Logo
-![Logo](img/logo.png)
+![Logo](img/logo-md.png)
 
 
 <hr>
