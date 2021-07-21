@@ -28,9 +28,13 @@ header, h2 {
 /* Device size specific settings */
 
 /* XS device settings */
+#mainHomepage {
+    /* background-color: #1F1B24; */
+}
 #mainContainer {
     height: 70vh;
     overflow: auto;
+    background-color: #1F1B24;
 }  
 
 #rightSection {
@@ -40,8 +44,50 @@ header, h2 {
 }
 
 .carousel-img {
-    margin: auto;
     height: 200px;
+    margin-top: 4vh;
+    margin-left: 1vw;
+    /* margin-right: auto; */
+
+}
+
+/* Fixed font-sizes */
+h1 {
+    font-size: 24px;
+}
+
+h2 {
+    display: none;
+}
+
+h4 {
+    font-size: 14px;
+}
+
+#homeInputModal {
+    font-size: 16px;
+    color: #a2adc3;
+}
+
+/* Custom size: X-small - Small devices (landscape phones, 416px and up) */
+@media (min-width: 416px) { 
+    .carousel-img {
+        margin-top: 5vw;
+        margin-left: 1.5vw;
+        height: 225px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 18px;
+        display: block;
+    }
+    h4 {
+        font-size: 12px;
+    }
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -56,8 +102,82 @@ header, h2 {
     }
 
     .carousel-img {
+        margin-top: 2vh;
+        margin-left: 10px;
+        height: 200px;
+    }
+
+    /* Fixed font-sizes */
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h4 {
+        font-size: 12px;
+    }
+}
+
+/* Medium devices (landscape phones, 768px and up) */
+@media (min-width: 768px) { 
+}
+
+/* Large devices (landscape phones, 1200px and up) */
+@media (min-width: 992px) { 
+    .carousel-img {
+        margin-top: 2vh;
+        margin-left: 30px;
         height: 275px;
     }
+
+    /* Fixed font-sizes */
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    h4 {
+        font-size: 24px;
+    }
+
+    #homeInputModal{
+        font-size: 20px;
+    }
+}
+
+/* X-Large devices (landscape phones, 1200px and up) */
+@media (min-width: 1200px) { 
+    .carousel-img {
+        margin-top: 4vh;
+        margin-left: 50px;
+    }
+    /* Fixed font-sizes */
+    h1 {
+        font-size: 64px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    h4 {
+        font-size: 20px;
+    }
+
+}
+
+
+.carousel {
+    position: fixed;
+}
+.carousel-inner > .item > img {
+    margin: 0 auto;
 }
 
 
@@ -80,11 +200,6 @@ header, h2 {
 .fa-bars {
     color: #a2adc3;
     font-size: 35px;
-}
-
-#homeInputModal {
-    color: #a2adc3;
-    font-size: 40px;
 }
 
 .modal-header, .modal-footer {
